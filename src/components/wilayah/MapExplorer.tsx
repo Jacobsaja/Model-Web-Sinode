@@ -122,7 +122,11 @@ export default function MapExplorer() {
   // ── Render ───────────────────────────────────────────────────────────────────
 
   return (
-    <section id="cari-jemaat" className="flex flex-col" style={{ height: "calc(100vh - 72px)", minHeight: 600 }}>
+    <section
+      id="cari-jemaat"
+      className="relative z-0 isolate flex flex-col overflow-hidden"
+      style={{ height: "calc(100vh - 72px)", minHeight: 600 }}
+    >
 
       {/* Nearest Finder bar */}
       <NearestChurchFinder
@@ -154,7 +158,7 @@ export default function MapExplorer() {
         {/* MAP — full width mobile (hidden when list tab active), 65% desktop */}
         <div
           className={`
-            relative flex-1 transition-all duration-300
+            relative z-0 flex-1 transition-all duration-300
             ${mobileTab === "list" ? "hidden lg:flex" : "flex"}
           `}
         >

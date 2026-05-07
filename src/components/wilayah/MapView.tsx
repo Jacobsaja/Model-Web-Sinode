@@ -128,7 +128,15 @@ export default function MapView({
           0%   { transform: scale(1); opacity: 0.7; }
           100% { transform: scale(2.2); opacity: 0; }
         }
-        .leaflet-container { font-family: inherit; }
+        .leaflet-container {
+          z-index: 0;
+          font-family: inherit;
+        }
+        .leaflet-control,
+        .leaflet-top,
+        .leaflet-bottom {
+          z-index: 10;
+        }
         .leaflet-popup-content-wrapper {
           background: #162A40;
           border: 1px solid #2A3F57;

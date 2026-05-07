@@ -39,7 +39,7 @@ export default function Navbar() {
       <nav
         role="navigation"
         aria-label="Navigasi utama"
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 w-full z-[1000] transition-all duration-300 ${
           isScrolled
             ? "bg-surface/80 backdrop-blur-md border-b border-border shadow-lg py-3"
             : "bg-transparent py-5"
@@ -109,7 +109,7 @@ export default function Navbar() {
 
       {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0 z-[100] lg:hidden transition-all duration-300 ${
+        className={`fixed inset-0 z-[1100] lg:hidden transition-all duration-300 ${
           isOpen ? "visible" : "invisible"
         }`}
         aria-hidden={!isOpen}

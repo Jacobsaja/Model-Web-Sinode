@@ -48,7 +48,7 @@ export default function ChurchListItem({
         w-full text-left flex gap-4 p-4 rounded-2xl border transition-all duration-200 group
         ${isSelected
           ? "bg-primary/20 border-accent/60 shadow-lg shadow-primary/10"
-          : "bg-surface/60 border-border hover:bg-surface hover:border-border/80 hover:shadow-md"
+          : "bg-surface/60 border-border hover:bg-primary/20 hover:border-accent/60 hover:shadow-lg hover:shadow-primary/10"
         }
       `}
     >
@@ -69,7 +69,7 @@ export default function ChurchListItem({
             className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors
               ${isSelected
                 ? "bg-primary text-accent"
-                : "bg-primary/10 text-accent group-hover:bg-primary/20"
+                : "bg-primary/10 text-accent group-hover:bg-primary"
               }`}
           >
             <MapPin size={16} strokeWidth={2.5} />
@@ -81,7 +81,7 @@ export default function ChurchListItem({
       <div className="flex-1 min-w-0">
         <p
           className={`font-bold text-sm leading-tight truncate
-            ${isSelected ? "text-accent" : "text-text-primary"}`}
+            ${isSelected ? "text-accent" : "text-text-primary group-hover:text-accent"}`}
         >
           <HighlightText text={jemaat.nama} highlight={searchQuery} />
         </p>

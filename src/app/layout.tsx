@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GKPI Sinode | Beranda",
-  description: "Selamat Datang di GKPI - Komunitas yang bertumbuh dalam iman, melayani dengan kasih, dan berdampak bagi sesama.",
+  title: "Nama | Beranda",
+  description: "Deskripsi",
 };
 
 export default function RootLayout({

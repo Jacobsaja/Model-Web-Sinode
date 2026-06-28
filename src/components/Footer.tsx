@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const navLinks = [
   { name: "Beranda", href: "/" },
-  { name: "Tentang GKPI", href: "#tentang" },
+  { name: "Tentang", href: "#tentang" },
   { name: "Pengurus", href: "#pengurus" },
   { name: "Wilayah", href: "#wilayah" },
   { name: "Publikasi", href: "#publikasi" },
@@ -37,22 +37,22 @@ export default function Footer() {
               <div className="relative w-12 h-12 shrink-0">
                 <Image
                   src={assets.logo}
-                  alt="Logo GKPI"
+                  alt="Logo"
                   fill
                   className="object-contain drop-shadow-lg transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
-              <span className="text-2xl font-sans font-bold tracking-tight text-white">GKPI</span>
+              <span className="text-2xl font-sans font-bold tracking-tight text-white">Nama</span>
             </Link>
             <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
-              Membangun komunitas yang bertumbuh dalam iman, melayani dengan kasih, dan berdampak bagi sesama melalui Injil Kristus.
+              Deskripsi
             </p>
             {/* Social icons */}
             <div className="flex items-center gap-4">
               {[
-                { Icon: Facebook, label: "Facebook GKPI" },
-                { Icon: Instagram, label: "Instagram GKPI" },
-                { Icon: Youtube, label: "YouTube GKPI" },
+                { Icon: Facebook, label: "Facebook" },
+                { Icon: Instagram, label: "Instagram" },
+                { Icon: Youtube, label: "YouTube" },
               ].map(({ Icon, label }) => (
                 <Link
                   key={label}
@@ -107,19 +107,19 @@ export default function Footer() {
               <li className="flex items-start gap-4">
                 <MapPin size={18} className="text-accent shrink-0 mt-0.5" />
                 <span className="text-sm text-text-secondary leading-relaxed">
-                  Jl. Pematang Siantar No. 12,<br />Sumatera Utara, Indonesia
+                  alamat<br />alamat
                 </span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone size={18} className="text-accent shrink-0" />
-                <a href="tel:+621234567890" className="text-sm text-text-secondary hover:text-white transition-colors font-medium">
-                  +62 123 4567 890
+                <a href="tel:+000000000000" className="text-sm text-text-secondary hover:text-white transition-colors font-medium">
+                  Nomor Telepon
                 </a>
               </li>
               <li className="flex items-center gap-4">
                 <Mail size={18} className="text-accent shrink-0" />
-                <a href="mailto:info@gkpi.or.id" className="text-sm text-text-secondary hover:text-white transition-colors font-medium">
-                  info@gkpi.or.id
+                <a href="url" className="text-sm text-text-secondary hover:text-white transition-colors font-medium">
+                  email
                 </a>
               </li>
             </ul>
@@ -129,7 +129,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-10 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-6">
           <p className="text-xs text-text-secondary/60">
-            © {currentYear} GKPI Sinode. Seluruh hak cipta dilindungi.
+            © {currentYear} Nama. Seluruh hak cipta dilindungi.
           </p>
           <div className="flex gap-8">
             {["Kebijakan Privasi", "Syarat & Ketentuan"].map((item) => (

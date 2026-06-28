@@ -21,76 +21,76 @@ import {
 const quickFacts = [
   {
     label: "Berdiri",
-    value: "30 Agustus 1964",
+    value: "Judul",
     icon: CalendarDays,
   },
   {
     label: "Pusat",
-    value: "Pematangsiantar",
+    value: "Judul",
     icon: MapPin,
   },
   {
     label: "Wilayah",
-    value: "12 Wilayah Pelayanan",
+    value: "Judul",
     icon: Landmark,
   },
 ];
 
 const history = [
   {
-    year: "1962",
-    title: "Gerakan Pembaruan",
-    text: "Muncul dorongan pembaruan dalam tubuh HKBP melalui Dewan Patotahon.",
+    year: "Tahun",
+    title: "Judul",
+    text: "Isi",
   },
   {
-    year: "1964",
-    title: "Sinode Khusus Parapat",
-    text: "Perbedaan pandangan memuncak dalam Sinode Khusus pada 19-25 Juli 1964.",
+    year: "Tahun",
+    title: "Judul",
+    text: "Isi",
   },
   {
-    year: "30 Agustus 1964",
-    title: "GKPI Berdiri",
-    text: "GKPI resmi berdiri di Pematangsiantar sebagai wadah persekutuan baru.",
+    year: "Tahun",
+    title: "Judul",
+    text: "Isi",
   },
 ];
 
 const faithPoints = [
-  "Bersumber dan berdasar pada Alkitab.",
-  "Mengacu pada tradisi iman gereja reformatoris.",
-  "Berpegang pada pengakuan iman gereja yang ekumenis.",
-  "Hadir di tengah pergumulan bangsa dengan landasan moral, etik, dan spiritual.",
+  "Pokok 1",
+  "Pokok 2",
+  "Pokok 3",
+  "Pokok 4",
 ];
 
 const institutions = [
-  "Panti Asuhan Mamre GKPI",
-  "Yapentra GKPI",
-  "Yayasan Dana Agape GKPI",
-  "LPPM GKPI",
-  "Badan Pendidik GKPI",
-  "Media Suara GKPI",
-  "Kolportase GKPI",
-  "Rumah Lansia Sejahtera LENTERA GKPI",
+  "Lembaga 1",
+  "Lembaga 2",
+  "Lembaga 3",
+  "Lembaga 4",
+  "Lembaga 5",
+  "Lembaga 6",
+  "Lembaga 7",
+  "Lembaga 8",
 ];
 
 const regions = [
-  "Medan I - Langkat",
-  "Medan II - Deli Serdang",
-  "Siantar - Simalungun - Tebing - Sergai",
-  "Dairi - Tanah Karo - Alas - Pakpak",
-  "Asahan - Labuhan Batu",
-  "Silindung - Pahae - Tapteng - Tapsel",
-  "Humbang - Samosir - Toba",
-  "Sumatera Bagian Selatan",
-  "Riau",
-  "Kepulauan Riau",
-  "Jabodetabek - Jawa - Kalimantan",
-  "Kalimantan",
+  "Wilayah 1",
+  "Wilayah 2",
+  "Wilayah 3",
+  "Wilayah 4",
+  "Wilayah 5",
+  "Wilayah 6",
+  "Wilayah 7",
+  "Wilayah 8",
+  "Wilayah 9",
+  "Wilayah 10",
+  "Wilayah 11",
+  "Wilayah 12",
 ];
 
 export const metadata = {
-  title: "Tentang GKPI",
+  title: "Tentang",
   description:
-    "Mengenal ringkas sejarah, pokok iman, lembaga, dan wilayah pelayanan Gereja Kristen Protestan Indonesia.",
+    "Deskripsi",
 };
 
 export default function TentangPage() {
@@ -115,22 +115,19 @@ export default function TentangPage() {
           <ScrollReveal>
             <div className="max-w-3xl space-y-7">
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-accent">
-                Tentang GKPI
+                Tentang
               </p>
               <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-                Gereja yang bertumbuh dalam iman dan pelayanan.
+                Judul
               </h1>
               <p className="max-w-2xl text-base leading-relaxed text-text-secondary md:text-lg">
-                Gereja Kristen Protestan Indonesia adalah gereja Kristen Protestan
-                yang berpusat di Pematangsiantar, Sumatera Utara. GKPI berdiri
-                pada 30 Agustus 1964 dan terus melayani melalui persekutuan,
-                kesaksian, pendidikan, dan pelayanan sosial.
+                Deskripsi
               </p>
               <Link
                 href="#sejarah"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-bold text-white shadow-lg shadow-black/20 transition-colors hover:bg-primary-dark"
               >
-                Lihat Ringkasan
+                Selengkapnya
                 <ArrowRight size={17} />
               </Link>
             </div>
@@ -163,22 +160,20 @@ export default function TentangPage() {
         <div className="grid grid-cols-1 gap-12 lg:gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div className="space-y-5">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-accent">
-              Sejarah Singkat
+              Sejarah
             </p>
             <h2 className="text-3xl font-bold text-white md:text-4xl leading-tight">
-              Lahir dari semangat pembaruan.
+              Judul
             </h2>
             <p className="text-text-secondary leading-relaxed">
-              GKPI berdiri sebagai bagian dari dinamika pembaruan gereja pada
-              awal 1960-an. Ringkasan ini menjaga halaman tetap ringan, tanpa
-              menghilangkan tonggak utamanya.
+              Deskripsi
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {history.map((item) => (
+            {history.map((item, idx) => (
               <article
-                key={item.title}
+                key={idx}
                 className="flex flex-col h-full justify-between rounded-3xl border border-border/70 bg-surface/55 p-7 shadow-xl shadow-black/10 transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-accent/5"
               >
                 <div>
@@ -207,12 +202,10 @@ export default function TentangPage() {
                 Pokok Iman
               </p>
               <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl">
-                Berakar pada Alkitab dan tradisi reformatoris.
+                Judul
               </h2>
               <p className="mt-5 leading-relaxed text-text-secondary">
-                Pokok-pokok Pemahaman Iman GKPI menjadi pedoman bagi warga dan
-                pelayan gereja dalam menyatakan iman, menyusun pelayanan, dan
-                memberi jawab atas pergumulan zaman.
+                Deskripsi
               </p>
             </div>
           </ScrollReveal>
@@ -243,16 +236,14 @@ export default function TentangPage() {
               Pimpinan 2025-2030
             </p>
             <h2 className="mt-3 text-2xl font-bold text-white">
-              Kepemimpinan Sinode
+              Kepemimpinan
             </h2>
             <div className="mt-6 space-y-4 text-sm text-text-secondary">
               <p>
-                <span className="font-bold text-white">Bishop:</span> Pdt. Dr.
-                Humala Lumbantobing, M.Th
+                <span className="font-bold text-white">Ketua:</span> Nama
               </p>
               <p>
-                <span className="font-bold text-white">Sekjen:</span> Pdt.
-                Parsaoran Sinaga, M.Min, M.Th
+                <span className="font-bold text-white">Wakil Ketua:</span> Nama
               </p>
             </div>
           </article>
@@ -262,10 +253,10 @@ export default function TentangPage() {
               <HandHeart size={24} className="text-accent" />
             </div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-              Lembaga Pelayanan
+              Lembaga
             </p>
             <h2 className="mt-3 text-2xl font-bold text-white">
-              Pelayanan yang hadir bagi gereja dan masyarakat.
+              Judul
             </h2>
             <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {institutions.map((institution) => (
@@ -290,15 +281,14 @@ export default function TentangPage() {
             <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.22em] text-accent">
-                  Wilayah Pelayanan
+                  Wilayah
                 </p>
                 <h2 className="mt-3 text-3xl font-bold text-white">
-                  Melayani dalam 12 wilayah.
+                  Judul
                 </h2>
               </div>
               <p className="max-w-xl text-sm leading-relaxed text-text-secondary">
-                Dari Sumatera Utara hingga berbagai daerah di Indonesia, GKPI
-                bertumbuh melalui jaringan wilayah pelayanan yang terorganisir.
+                Deskripsi
               </p>
             </div>
 
@@ -321,10 +311,10 @@ export default function TentangPage() {
                 <Users size={24} className="mt-1 shrink-0 text-accent" />
                 <div>
                   <h3 className="text-xl font-bold text-white">
-                    Ingin mengenal pelayanan GKPI lebih lanjut?
+                    Ingin mengenal pelayanan lebih lanjut?
                   </h3>
                   <p className="mt-1 text-sm text-text-secondary">
-                    Hubungi Sinode atau lihat informasi pelayanan terbaru.
+                    Hubungi kami atau lihat informasi pelayanan terbaru.
                   </p>
                 </div>
               </div>

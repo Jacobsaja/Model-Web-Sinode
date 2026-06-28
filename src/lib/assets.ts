@@ -9,10 +9,11 @@
 export const assets = {
   /**
    * Primary church logo.
-   * File: /public/logo.png
+   * Placeholder: /public/placeholder-logo.png
+   * Replace with: /public/logo.png when ready.
    * Used in: Navbar, Footer
    */
-  logo: "/logo.png",
+  logo: "/placeholder-logo.png",
 
   /**
    * Hero section background image.
@@ -34,10 +35,10 @@ export const assets = {
 
   /**
    * About section image (dedicated).
+   * Placeholder: /public/placeholder-hero.png
    * Replace with an interior/congregation photo when available.
-   * Falls back to heroBg until official asset is provided.
    */
-  aboutImg: "/hero-bg.png",
+  aboutImg: "/placeholder-hero.png",
 
   /**
    * Placeholder for future images.

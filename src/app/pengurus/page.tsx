@@ -13,130 +13,131 @@ import { assets } from "@/lib/assets";
 
 const pimpinanSinode = {
   leaders: [
-    { name: "Pdt. Dr Humala Lumbantobing M.Th", role: "Bishop" },
-    { name: "Pdt. Parsaoran Sinaga M.Min, M.Th", role: "Sekjen" },
+    { name: "Nama", role: "Peran" },
+    { name: "Nama", role: "Peran" },
   ],
   departments: [
-    { name: "Pdt. Dr. Jhon P.E Simorangkir M.Th", role: "Departemen Apostolat" },
-    { name: "Pdt. Dr Irvan Hutasoit M.Th", role: "Departemen Pastorat" },
-    { name: "Pdt. Lucia Lumbantobing M.Th", role: "Departemen Diakonat" },
-    { name: "Pdt. Jontra M Purba M.Th", role: "Departemen Umum/ Organisasi" },
-    { name: "Pdt. Martin Pangihutan Hutabarat S.Th, M.M", role: "Departemen Administrasi dan Informasi Komunikasi" },
-    { name: "Lasro Nainggolan S.E M.Si", role: "Departemen Keuangan" },
+    { name: "Nama", role: "Peran" },
+    { name: "Nama", role: "Peran" },
+    { name: "Nama", role: "Peran" },
+    { name: "Nama", role: "Peran" },
+    { name: "Nama", role: "Peran" },
+    { name: "Nama", role: "Peran" },
   ]
 };
 
 const majelisSinode = [
   {
-    komisi: "Komisi 1",
-    ketua: { name: "Pdt. Baha Pasaribu, M.Th", role: "Ketua" },
-    sekretaris: { name: "dr. Irwan Supriadi Hutapea", role: "Sekretaris" },
+    komisi: "Nama",
+    ketua: { name: "Nama", role: "Peran" },
+    sekretaris: { name: "Nama", role: "Peran" },
     anggota: [
-      { name: "Pnt. Jekson Lumbantobing, S.Th" },
-      { name: "Rosmery R. Sihombing" },
-      { name: "Josua Tambun, S.Si, S.Pd" },
-      { name: "Pdt. Noverik G.L. Tambunan , M.Th" },
-      { name: "Pdt. Samuel Aritonang, S.Si" },
-      { name: "Pdt. Paulus Silitonga, S.Th, M.A" }
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" }
     ]
   },
   {
-    komisi: "Komisi 2",
-    ketua: { name: "John Posma Lumbantobing", role: "Ketua" },
-    sekretaris: { name: "Giftcan Andaredvan Sirait, S.H", role: "Sekretaris" },
+    komisi: "Nama",
+    ketua: { name: "Nama", role: "Peran" },
+    sekretaris: { name: "Nama", role: "Peran" },
     anggota: [
-      { name: "Marnix Sahata Hutabarat, BBA" },
-      { name: "Harris Silalahi, S.Si" },
-      { name: "Ir. Sutan G. Manalu" },
-      { name: "Prof. Dr. Marihot Manullang" },
-      { name: "Pnt. Dr. Jonner Lumban Gaol, SE, M.Si." },
-      { name: "Pdt. Anthony M.H. Lumbantobing, S.Th" },
-      { name: "Pnt. David SIanipar" }
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" }
     ]
   },
   {
-    komisi: "Komisi 3",
-    ketua: { name: "Pnt. Jansen Sitohang, S.E", role: "Ketua" },
-    sekretaris: { name: "Pnt. Evi Sartika Situmeang, SE. Ak.", role: "Sekretaris" },
+    komisi: "Nama",
+    ketua: { name: "Nama", role: "Peran" },
+    sekretaris: { name: "Nama", role: "Peran" },
     anggota: [
-      { name: "Riris Rohita Simamora, S.Pd. MAP" },
-      { name: "Legayanti Situmorang, SE" },
-      { name: "Ir. Donald P. Lumban Tobing" },
-      { name: "Pnt. Miduk Situmorang" },
-      { name: "Pnt. Lasron Atas Situmorang" },
-      { name: "Daniel C. Manik" },
-      { name: "Pdt. Radot Leopard Gultom, S.Th, M.A" }
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" },
+      { name: "Nama" }
     ]
   }
 ];
 
 const bprp = {
-  ketua: { name: "Pdt. Polin Sihombing, S.Th, MM", role: "Ketua" },
-  sekretaris: { name: "Pdt. Wilfried Ernanda Hutapea, S.Th", role: "Sekretaris" },
+  ketua: { name: "Nama", role: "Peran" },
+  sekretaris: { name: "Nama", role: "Peran" },
   anggota: [
-    { name: "Pdt. Samuel Parulian Reinhard Aritonang, S.Si" },
-    { name: "Pdt. Simon A.K. Manurung, S.Th., M.Psi." },
-    { name: "Pdt. Linti Dongoran, M.Th" }
+    { name: "Nama" },
+    { name: "Nama" },
+    { name: "Nama" }
   ]
 };
 
 const phbk = {
-  ketua: { name: "Pnt. Hasudungan Turnip, SE.Ak, MM", role: "Ketua" },
-  sekretaris: { name: "Henny Noverita Tamba, SE, MM", role: "Sekretaris" },
+  ketua: { name: "Nama", role: "Peran" },
+  sekretaris: { name: "Nama", role: "Peran" },
   anggota: [
-    { name: "Dr. Dominggo Pasaribu, ST, MM, MT" },
-    { name: "Pnt. Asran Iskandar Pane, SE.Ak" },
-    { name: "Fritz Benawan Hutauruk, SE" }
+    { name: "Nama" },
+    { name: "Nama" },
+    { name: "Nama" }
   ]
 };
 
 const koordinatorWilayah = [
-  { name: "Pdt. Waldemar S. Simanjuntak, M.Th", role: "Wilayah 1", desc: "Medan I - Langkat" },
-  { name: "Pdt. Pardi M Silalahi, M.Th", role: "Wilayah 2", desc: "Medan II - Deli Serdang" },
-  { name: "Pdt. Ebed Nainggolan, S.Th., MM", role: "Wilayah 3", desc: "Siantar - Simalungun - Tebing - Sergai" },
-  { name: "Pdt. Bonarmanjaya Sihotang, S.Th", role: "Wilayah 4", desc: "Dairi - Tanah Karo - Alas - Pakpak" },
-  { name: "Pdt. Blesful A. Hutasoit, S.Th", role: "Wilayah 5", desc: "Asahan - Labuhan Batu" },
-  { name: "Pdt. Andar M. Lumbantobing, M.Th", role: "Wilayah 6", desc: "Silindung - Pahae - Tapteng - Tapsel" },
-  { name: "Pdt. Edy Leonard Hutahaean, S.Th", role: "Wilayah 7", desc: "Humbang - Samosir - Toba" },
-  { name: "Pdt. Gibson Sibuea, S.Th", role: "Wilayah 8", desc: "Sumatera Bagian Selatan" },
-  { name: "Pdt. Ratna Dewi Lubis, S.Th", role: "Wilayah 9", desc: "Riau" },
-  { name: "Pdt. Aprida Marito Hutapea, S.Th, MM", role: "Wilayah 10", desc: "Kepulauan Riau" },
-  { name: "Pdt. Hasintongan Gurning, S.Th., M.Min", role: "Wilayah 11", desc: "Jabodetabek - Jawa - Kalimantan" }
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" },
+  { name: "Nama", role: "Peran", desc: "Deskripsi" }
 ];
 
 const tabs = [
-  { id: "pimpinan", label: "Pimpinan Sinode" },
-  { id: "majelis", label: "Majelis Sinode" },
-  { id: "bprp", label: "BPRP" },
-  { id: "phbk", label: "PHBK" },
-  { id: "wilayah", label: "Koor. Wilayah" },
+  { id: "peran1", label: "Bidang A" },
+  { id: "peran2", label: "Bidang B" },
+  { id: "peran3", label: "Bidang C" },
+  { id: "peran4", label: "Bidang D" },
+  { id: "peran5", label: "Bidang E" },
 ];
 
 // ─── Components ─────────────────────────────────────────────────────────────
 
-function ProfileCard({ 
-  name, 
-  role, 
-  desc, 
-  variant = "standard" 
-}: { 
-  name: string; 
-  role?: string; 
-  desc?: string; 
-  variant?: "leader" | "standard" | "compact" 
+function ProfileCard({
+  name,
+  role,
+  desc,
+  variant = "standard"
+}: {
+  name: string;
+  role?: string;
+  desc?: string;
+  variant?: "leader" | "standard" | "compact"
 }) {
   const isLeader = variant === "leader";
   const isCompact = variant === "compact";
 
   return (
     <div className={`flex flex-col items-center text-center group transition-all duration-300 hover:scale-105 ${isCompact ? 'opacity-85 hover:opacity-100' : ''}`}>
-      <div 
+      <div
         className={`relative w-full aspect-square bg-surface/50 border border-border rounded-3xl overflow-hidden shadow-lg transition-colors duration-300 group-hover:border-accent/40 flex items-center justify-center
         ${isLeader ? 'max-w-[280px] md:max-w-[320px]' : (isCompact ? 'max-w-[140px]' : 'max-w-[200px]')}`}
       >
         <User size={isLeader ? 80 : (isCompact ? 32 : 48)} className="text-text-secondary/20" strokeWidth={1.5} />
       </div>
-      
+
       <div className={`mt-5 space-y-1 ${isLeader ? 'max-w-[280px] md:max-w-[320px]' : (isCompact ? 'max-w-[140px]' : 'max-w-[200px]')}`}>
         {role && (
           <p className={`font-bold text-accent uppercase tracking-wider ${isLeader ? 'text-sm' : 'text-[10px]'}`}>
@@ -159,7 +160,7 @@ function ProfileCard({
 // ─── Page ────────────────────────────────────────────────────────────────────
 
 export default function PengurusPage() {
-  const [activeTab, setActiveTab] = useState("pimpinan");
+  const [activeTab, setActiveTab] = useState("peran1");
   const navRef = useRef<HTMLUListElement>(null);
   const buttonRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
@@ -229,7 +230,7 @@ export default function PengurusPage() {
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
             src={assets.heroBg}
-            alt="GKPI Background"
+            alt="nama Background"
             fill
             className="object-cover opacity-10"
             priority
@@ -243,10 +244,10 @@ export default function PengurusPage() {
               Struktur Organisasi
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-tight mt-3">
-              Kepengurusan GKPI
+              Judul
             </h1>
             <p className="text-base md:text-lg text-text-secondary mt-5 max-w-2xl mx-auto leading-relaxed">
-              Daftar susunan pimpinan, majelis, komisi, dan badan pengurus yang melayani di Gereja Kristen Protestan Indonesia.
+              Deskripsi
             </p>
           </ScrollReveal>
         </div>
@@ -268,9 +269,8 @@ export default function PengurusPage() {
                       buttonRefs.current[tab.id] = element;
                     }}
                     onClick={() => scrollToSection(tab.id)}
-                    className={`relative px-5 py-4 text-sm font-bold whitespace-nowrap transition-colors duration-300 ${
-                      isActive ? "text-accent" : "text-text-secondary hover:text-white"
-                    }`}
+                    className={`relative px-5 py-4 text-sm font-bold whitespace-nowrap transition-colors duration-300 ${isActive ? "text-accent" : "text-text-secondary hover:text-white"
+                      }`}
                   >
                     {tab.label}
                   </button>
@@ -290,12 +290,12 @@ export default function PengurusPage() {
 
       <div className="pb-24">
         {/* ── 1. Pimpinan Sinode ── */}
-        <Section id="pimpinan" className="!py-16 md:!py-24">
+        <Section id="peran1" className="!py-16 md:!py-24">
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Pimpinan Sinode</h2>
+            <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Bidang A</h2>
             <div className="w-16 h-1 mx-auto mt-6 rounded-full bg-primary/40" />
           </div>
-          
+
           <ScrollReveal>
             {/* Top Leaders */}
             <div className="flex flex-col md:flex-row justify-center gap-12 md:gap-20 mb-20 md:mb-28">
@@ -314,10 +314,10 @@ export default function PengurusPage() {
         </Section>
 
         {/* ── 2. Majelis Sinode ── */}
-        <section id="majelis" className="py-16 md:py-24 bg-surface/30 border-y border-border/50">
+        <section id="peran2" className="py-16 md:py-24 bg-surface/30 border-y border-border/50">
           <div className="max-w-7xl mx-auto px-5 sm:px-8">
             <div className="text-center mb-16 md:mb-20">
-              <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Majelis Sinode</h2>
+              <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Bidang B</h2>
               <div className="w-16 h-1 mx-auto mt-6 rounded-full bg-primary/40" />
             </div>
 
@@ -326,14 +326,14 @@ export default function PengurusPage() {
                 <ScrollReveal key={i}>
                   <div className="bg-background/50 border border-border/60 rounded-[2.5rem] p-8 md:p-12 shadow-2xl">
                     <h3 className="text-2xl font-bold text-center text-white mb-12">{komisi.komisi}</h3>
-                    
+
                     <div className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 mb-12">
                       <ProfileCard name={komisi.ketua.name} role={komisi.ketua.role} />
                       <ProfileCard name={komisi.sekretaris.name} role={komisi.sekretaris.role} />
                     </div>
 
                     <div className="pt-10 border-t border-border/50">
-                      <p className="text-center text-xs font-bold uppercase tracking-widest text-text-secondary mb-8">Anggota</p>
+                      <p className="text-center text-xs font-bold uppercase tracking-widest text-text-secondary mb-8">Judul</p>
                       <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
                         {komisi.anggota.map((anggota, j) => (
                           <ProfileCard key={j} name={anggota.name} variant="compact" />
@@ -348,22 +348,22 @@ export default function PengurusPage() {
         </section>
 
         {/* ── 3. BPRP ── */}
-        <Section id="bprp" className="!py-16 md:!py-24">
+        <Section id="peran3" className="!py-16 md:!py-24">
           <div className="max-w-7xl mx-auto px-5 sm:px-8">
             <ScrollReveal>
               <div className="text-center mb-16 md:mb-20">
-                <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Badan Pekerja Rapat Pendeta</h2>
+                <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Bidang C</h2>
                 <div className="w-16 h-1 mx-auto mt-6 rounded-full bg-primary/40" />
               </div>
-              
+
               <div className="bg-background/50 border border-border/60 rounded-[2.5rem] p-8 md:p-12 shadow-2xl">
                 <div className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 mb-12">
                   <ProfileCard name={bprp.ketua.name} role={bprp.ketua.role} />
                   <ProfileCard name={bprp.sekretaris.name} role={bprp.sekretaris.role} />
                 </div>
-                
+
                 <div className="pt-10 border-t border-border/50">
-                  <p className="text-center text-xs font-bold uppercase tracking-widest text-text-secondary mb-8">Anggota</p>
+                  <p className="text-center text-xs font-bold uppercase tracking-widest text-text-secondary mb-8">Judul</p>
                   <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
                     {bprp.anggota.map((anggota, i) => (
                       <ProfileCard key={i} name={anggota.name} variant="compact" />
@@ -376,22 +376,22 @@ export default function PengurusPage() {
         </Section>
 
         {/* ── 4. PHBK ── */}
-        <section id="phbk" className="py-16 md:py-24 bg-surface/30 border-y border-border/50">
+        <section id="peran4" className="py-16 md:py-24 bg-surface/30 border-y border-border/50">
           <div className="max-w-7xl mx-auto px-5 sm:px-8">
             <ScrollReveal>
               <div className="text-center mb-16 md:mb-20">
-                <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">PHBK</h2>
+                <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Bidang D</h2>
                 <div className="w-16 h-1 mx-auto mt-6 rounded-full bg-primary/40" />
               </div>
-              
+
               <div className="bg-background/50 border border-border/60 rounded-[2.5rem] p-8 md:p-12 shadow-2xl">
                 <div className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 mb-12">
                   <ProfileCard name={phbk.ketua.name} role={phbk.ketua.role} />
                   <ProfileCard name={phbk.sekretaris.name} role={phbk.sekretaris.role} />
                 </div>
-                
+
                 <div className="pt-10 border-t border-border/50">
-                  <p className="text-center text-xs font-bold uppercase tracking-widest text-text-secondary mb-8">Anggota</p>
+                  <p className="text-center text-xs font-bold uppercase tracking-widest text-text-secondary mb-8">Judul</p>
                   <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
                     {phbk.anggota.map((anggota, i) => (
                       <ProfileCard key={i} name={anggota.name} variant="compact" />
@@ -404,10 +404,10 @@ export default function PengurusPage() {
         </section>
 
         {/* ── 5. Koordinator Wilayah ── */}
-        <section id="wilayah" className="py-16 md:py-24 bg-surface/30 border-t border-border/50">
+        <section id="peran5" className="py-16 md:py-24 bg-surface/30 border-t border-border/50">
           <div className="max-w-7xl mx-auto px-5 sm:px-8">
             <div className="text-center mb-16 md:mb-20">
-              <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Koordinator Wilayah</h2>
+              <h2 className="text-3xl md:text-4xl font-sans font-bold text-white">Bidang E</h2>
               <div className="w-16 h-1 mx-auto mt-6 rounded-full bg-primary/40" />
             </div>
 

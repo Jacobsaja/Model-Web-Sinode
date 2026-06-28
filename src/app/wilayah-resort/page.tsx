@@ -7,13 +7,13 @@ import MapExplorer from "@/components/wilayah/MapExplorer";
 import { jemaatData } from "@/data/jemaat";
 
 export const metadata: Metadata = {
-  title: "Resort & Wilayah | GKPI Sinode",
+  title: "judul",
   description:
-    "Temukan lokasi jemaat GKPI di seluruh Indonesia. Jelajahi peta interaktif, cari gereja terdekat, dan lihat informasi lengkap setiap jemaat.",
+    "deskripsi",
   openGraph: {
-    title: "Resort & Wilayah — GKPI Sinode",
+    title: "judul",
     description:
-      "Sistem penemuan lokasi gereja GKPI — interaktif, mudah, dan lengkap.",
+      "deskripsi",
   },
 };
 
@@ -30,14 +30,14 @@ export default function WilayahResortPage() {
       {/* Stats bar */}
       <div className="bg-surface/80 border-b border-border backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center gap-8 overflow-x-auto">
-          <StatChip value={total} label="Jemaat Terdaftar" />
+          <StatChip value={total} label="Label" />
           <div className="w-px h-6 bg-border shrink-0" />
-          <StatChip value="18+" label="Kota di Indonesia" />
+          <StatChip value="N+" label="Label" />
           <div className="w-px h-6 bg-border shrink-0" />
-          <StatChip value="5" label="Provinsi" />
+          <StatChip value="N" label="Label" />
           <div className="w-px h-6 bg-border shrink-0" />
           <p className="text-xs text-text-secondary/60 shrink-0 italic">
-            Data Wilayah &amp; Resort akan ditambahkan segera
+            Keterangan
           </p>
         </div>
       </div>

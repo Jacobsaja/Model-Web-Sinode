@@ -7,27 +7,27 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    title: "Persiapan Perayaan Pentakosta 2026",
+    title: "judul",
     excerpt:
-      "Rangkaian kegiatan jemaat menyambut Pentakosta akan dimulai pada minggu pertama bulan Mei.",
+      "deskripsi",
     image: "/hero_slide_1.png",
   },
   {
-    title: "Pelatihan Kepemimpinan Pemuda GKPI",
+    title: "judul",
     excerpt:
-      "Pendaftaran pelatihan wilayah untuk pemuda GKPI kini dibuka secara daring.",
+      "deskripsi",
     image: "/hero_slide_2.png",
   },
   {
-    title: "Update Renovasi Kantor Sinode",
+    title: "judul",
     excerpt:
-      "Renovasi tahap kedua kantor Sinode terus berjalan dengan fokus pada ruang pelayanan.",
+      "deskripsi",
     image: "/hero_slide_3.png",
   },
   {
-    title: "Panduan Ibadah Keluarga",
+    title: "judul",
     excerpt:
-      "Materi ibadah keluarga triwulan ini tersedia untuk mendukung persekutuan di rumah.",
+      "deskripsi",
     image: "/hero_slide_4.png",
   },
 ];
@@ -56,12 +56,11 @@ export default function InfoCarousel() {
       <div className="relative min-h-[720px] sm:min-h-[760px] md:min-h-[min(88vh,920px)]">
         {slides.map((slide, index) => (
           <article
-            key={slide.title}
-            className={`absolute inset-0 transition-opacity duration-700 ease-out ${
-              index === activeIndex
-                ? "opacity-100"
-                : "pointer-events-none opacity-0"
-            }`}
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-700 ease-out ${index === activeIndex
+              ? "opacity-100"
+              : "pointer-events-none opacity-0"
+              }`}
             aria-hidden={index !== activeIndex}
           >
             <div className="absolute inset-0">
@@ -79,7 +78,7 @@ export default function InfoCarousel() {
 
             <div className="relative z-10 flex h-full max-w-4xl flex-col justify-end px-6 pb-24 pt-16 sm:px-10 md:px-16 lg:px-20 xl:px-24">
               <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-accent sm:text-sm">
-                Info GKPI
+                Info
               </p>
               <h3 className="text-3xl font-bold leading-tight text-white drop-shadow-lg sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                 {slide.title}
@@ -102,14 +101,13 @@ export default function InfoCarousel() {
       <div className="absolute bottom-7 left-1/2 z-20 flex -translate-x-1/2 items-center gap-3">
         {slides.map((slide, index) => (
           <button
-            key={slide.title}
+            key={index}
             type="button"
             onClick={() => setActiveIndex(index)}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-              index === activeIndex
-                ? "w-8 bg-accent"
-                : "w-2.5 bg-text-secondary/35 hover:bg-text-secondary/60"
-            }`}
+            className={`h-2.5 rounded-full transition-all duration-300 ${index === activeIndex
+              ? "w-8 bg-accent"
+              : "w-2.5 bg-text-secondary/35 hover:bg-text-secondary/60"
+              }`}
             aria-label={`Tampilkan info ${index + 1}`}
             aria-current={index === activeIndex}
           />

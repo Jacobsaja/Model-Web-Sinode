@@ -9,71 +9,71 @@ const slides = [
   {
     id: 1,
     type: "identity",
-    title: "Gereja Kristen Protestan Indonesia",
-    subtitle: "Melayani dengan Hati, Bertumbuh dalam Iman",
+    title: "Nama",
+    subtitle: "Teks",
     // We use the successfully generated Identity image
     image: assets.slide1,
   },
   {
     id: 2,
     type: "verse",
-    verse: "Beribadahlah kepada TUHAN dengan sukacita, datanglah ke hadapan-Nya dengan sorak-sorai!",
-    reference: "Mazmur 100:2",
-    cta: "Lihat Jadwal Ibadah",
+    verse: "Isi",
+    reference: "ayat",
+    cta: "Fitur",
     href: "#jadwal",
     image: assets.slide2, // Falls back to hero-bg if missing in public/
   },
   {
     id: 3,
     type: "verse",
-    verse: "Firman-Mu itu pelita bagi kakiku dan terang bagi jalanku.",
-    reference: "Mazmur 119:105",
-    cta: "Baca Renungan",
+    verse: "Isi",
+    reference: "ayat",
+    cta: "Fitur",
     href: "#renungan",
     image: assets.slide3,
   },
   {
     id: 4,
     type: "verse",
-    verse: "Dan marilah kita saling memperhatikan supaya kita saling mendorong dalam kasih dan dalam pekerjaan baik.",
-    reference: "Ibrani 10:24",
-    cta: "Hubungi Kami",
+    verse: "Isi",
+    reference: "ayat",
+    cta: "Fitur",
     href: "#kontak",
     image: assets.slide4,
   },
   {
     id: 5,
     type: "verse",
-    verse: "Segala tulisan yang diilhamkan Allah memang bermanfaat untuk mengajar, untuk menyatakan kesalahan, untuk memperbaiki kelakuan...",
-    reference: "2 Timotius 3:16",
-    cta: "Lihat Publikasi",
+    verse: "Isi",
+    reference: "ayat",
+    cta: "Fitur",
     href: "#publikasi",
     image: assets.slide3, // Reusing Bible image
   },
   {
     id: 6,
     type: "verse",
-    verse: "Bernyanyilah bagi TUHAN, bermazmurlah bagi nama-Nya, buatlah jalan bagi Dia yang berkendaraan melintasi awan-awan!",
-    reference: "Mazmur 68:5",
-    cta: "Lihat Kidung Pujian",
+    verse: "Isi",
+    reference: "ayat",
+    cta: "Fitur",
     href: "#kidung-pujian",
     image: assets.slide2, // Reusing Worship/Singing image
   },
   {
     id: 7,
     type: "verse",
-    verse: "Tetapi yang kesukaannya ialah Taurat TUHAN, dan yang merenungkan Taurat itu siang dan malam.",
-    reference: "Mazmur 1:2",
-    cta: "Ayo Buka Alkitab",
+    verse: "Isi",
+    reference: "ayat",
+    cta: "Fitur",
     href: "#alkitab-online",
     image: assets.slide3, // Menggunakan gambar Alkitab
   },
   {
     id: 8,
     type: "verse",
-    verse: "Sebab di mana dua atau tiga orang berkumpul dalam nama-Ku, di situ Aku ada di tengah-tengah mereka.",
-    reference: "Matius 18:20",
-    cta: "Masuk Portal",
+    verse: "Isi",
+    reference: "ayat",
+    cta: "Fitur",
     href: "/login",
     image: assets.slide4, // Reusing Community image
   },
@@ -111,7 +111,7 @@ export default function Hero() {
                   <Image
                     // Use slide image if exists, fallback to heroBg for missing placeholders
                     src={slide.image || assets.heroBg}
-                    alt="GKPI Background"
+                    alt="nama Background"
                     fill
                     className="object-cover opacity-80"
                     priority={index === 0}
@@ -136,10 +136,12 @@ export default function Hero() {
                     <div className="relative w-24 h-24 md:w-32 md:h-32 mb-8 opacity-90">
                       <Image
                         src={assets.logo}
-                        alt="Logo GKPI"
+                        alt="Logo nama"
                         fill
+                        sizes="(max-width: 768px) 96px, 128px"
                         className="object-contain drop-shadow-2xl"
                         priority
+                        loading="eager"
                       />
                     </div>
                     <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-wide mb-6">

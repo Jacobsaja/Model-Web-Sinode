@@ -20,26 +20,26 @@ export default function ResortHero() {
 
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-5 text-center text-text-primary sm:px-8">
         <p className="mb-5 animate-fade-in-up text-xs font-semibold uppercase tracking-[0.28em] text-accent opacity-0 [animation-delay:120ms]">
-          Pelayanan dan Wilayah
+          Label
         </p>
 
         <h1 className="animate-fade-in-up font-serif text-4xl font-semibold leading-[1.05] text-white opacity-0 drop-shadow-2xl sm:text-5xl md:text-6xl lg:text-7xl [animation-delay:220ms]">
-          Resort & Jemaat Khusus GKPI
+          Judul
         </h1>
 
         <p className="mt-6 max-w-2xl animate-fade-in-up text-base leading-8 text-text-primary/90 opacity-0 drop-shadow-lg sm:text-lg md:text-xl [animation-delay:360ms]">
-          Temukan lokasi jemaat GKPI dan pahami struktur pelayanan di berbagai wilayah.
+          Deskripsi
         </p>
 
         <Link
           href="#cari-jemaat"
           className="mt-9 inline-flex min-h-12 animate-fade-in-up items-center justify-center rounded-full bg-primary px-8 py-3 text-base font-semibold text-white opacity-0 shadow-[0_18px_50px_rgba(0,0,0,0.28)] transition duration-300 hover:-translate-y-0.5 hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:px-10 [animation-delay:500ms]"
         >
-          Cari Jemaat
+          Teks Tombol
         </Link>
 
         <p className="mt-5 max-w-sm animate-fade-in-up text-sm leading-6 text-text-primary/80 opacity-0 sm:max-w-none [animation-delay:640ms]">
-          Gunakan pencarian di bawah untuk menemukan gereja terdekat.
+          Teks Keterangan
         </p>
       </div>
     </section>

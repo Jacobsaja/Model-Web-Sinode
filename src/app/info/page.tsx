@@ -29,9 +29,65 @@ import {
   Volume2,
   VolumeX,
   Download,
+  Building2,
+  CalendarDays,
+  MapPin,
+  ShieldCheck,
+  ArrowRight,
 } from "lucide-react";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
+
+const quickFacts = [
+  {
+    label: "Berdiri",
+    value: "Judul",
+    icon: CalendarDays,
+  },
+  {
+    label: "Pusat",
+    value: "Judul",
+    icon: MapPin,
+  },
+  {
+    label: "Wilayah",
+    value: "Judul",
+    icon: Landmark,
+  },
+];
+
+const faithPoints = [
+  "Pokok 1",
+  "Pokok 2",
+  "Pokok 3",
+  "Pokok 4",
+];
+
+const institutions = [
+  "Lembaga 1",
+  "Lembaga 2",
+  "Lembaga 3",
+  "Lembaga 4",
+  "Lembaga 5",
+  "Lembaga 6",
+  "Lembaga 7",
+  "Lembaga 8",
+];
+
+const regions = [
+  "Wilayah 1",
+  "Wilayah 2",
+  "Wilayah 3",
+  "Wilayah 4",
+  "Wilayah 5",
+  "Wilayah 6",
+  "Wilayah 7",
+  "Wilayah 8",
+  "Wilayah 9",
+  "Wilayah 10",
+  "Wilayah 11",
+  "Wilayah 12",
+];
 
 const sejarahTimeline = [
   {
@@ -587,7 +643,7 @@ export default function InfoPage() {
             </Link>
             <ChevronRight size={14} className="text-text-primary/30" />
             <span className="text-sm font-medium text-accent">
-              Profil
+              Profil GKPI
             </span>
           </nav>
 
@@ -611,6 +667,8 @@ export default function InfoPage() {
               {[
                 { label: "Sejarah", href: "#sejarah" },
                 { label: "Visi & Misi", href: "#visi-misi" },
+                { label: "Pokok Iman", href: "#pokok-iman" },
+                { label: "Kepemimpinan", href: "#kepemimpinan" },
                 { label: "Dokumen", href: "#dokumen" },
               ].map((item) => (
                 <Link
@@ -620,6 +678,28 @@ export default function InfoPage() {
                 >
                   {item.label}
                 </Link>
+              ))}
+            </div>
+          </ScrollReveal>
+
+          {/* Quick Facts Row */}
+          <ScrollReveal>
+            <div className="mt-8 flex flex-wrap gap-4">
+              {quickFacts.map((fact) => (
+                <div
+                  key={fact.label}
+                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-background/35 px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-md"
+                >
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/30">
+                    <fact.icon size={18} className="text-accent" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-text-primary/60">
+                      {fact.label}
+                    </p>
+                    <p className="text-sm font-bold text-white">{fact.value}</p>
+                  </div>
+                </div>
               ))}
             </div>
           </ScrollReveal>
@@ -1237,6 +1317,164 @@ export default function InfoPage() {
           </div>
         );
       })()}
+
+      {/* ── Pokok Iman ───────────────────────────────────────────────────── */}
+      <section
+        id="pokok-iman"
+        className="border-y border-border/60 bg-surface/30 px-5 py-16 sm:px-8 md:py-20"
+      >
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
+          <ScrollReveal>
+            <div className="rounded-3xl border border-border/70 bg-background/75 p-8 shadow-2xl shadow-black/15 md:p-10">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/15">
+                <ShieldCheck size={28} className="text-accent" />
+              </div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-accent">
+                Pokok Iman
+              </p>
+              <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                Judul
+              </h2>
+              <p className="mt-5 leading-relaxed text-text-secondary">
+                Deskripsi
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="grid grid-cols-1 gap-4">
+              {faithPoints.map((point) => (
+                <div
+                  key={point}
+                  className="flex items-start gap-4 rounded-2xl border border-border/60 bg-background/50 p-5"
+                >
+                  <BookOpen size={21} className="mt-0.5 shrink-0 text-accent" />
+                  <p className="text-text-secondary">{point}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ── Kepemimpinan & Lembaga ──────────────────────────────────────────── */}
+      <section
+        id="kepemimpinan"
+        className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-20"
+      >
+        <ScrollReveal>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <article className="rounded-3xl border border-border/70 bg-surface/55 p-8 shadow-xl shadow-black/10">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15">
+                <Church size={24} className="text-accent" />
+              </div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
+                Pimpinan 2025–2030
+              </p>
+              <h2 className="mt-3 text-2xl font-bold text-white"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                Kepemimpinan
+              </h2>
+              <div className="mt-6 space-y-4 text-sm text-text-secondary">
+                <p>
+                  <span className="font-bold text-white">Ketua:</span> Nama
+                </p>
+                <p>
+                  <span className="font-bold text-white">Wakil Ketua:</span> Nama
+                </p>
+              </div>
+            </article>
+
+            <article className="rounded-3xl border border-border/70 bg-surface/55 p-8 shadow-xl shadow-black/10 lg:col-span-2">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15">
+                <HandHeart size={24} className="text-accent" />
+              </div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
+                Lembaga
+              </p>
+              <h2 className="mt-3 text-2xl font-bold text-white"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                Judul
+              </h2>
+              <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {institutions.map((institution) => (
+                  <div
+                    key={institution}
+                    className="flex items-center gap-3 rounded-xl border border-border/50 bg-background/45 px-4 py-3"
+                  >
+                    <Building2 size={17} className="shrink-0 text-accent" />
+                    <span className="text-sm text-text-secondary">
+                      {institution}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </article>
+          </div>
+        </ScrollReveal>
+      </section>
+
+      {/* ── Wilayah ──────────────────────────────────────────────────────── */}
+      <section className="px-5 pb-16 sm:px-8 md:pb-20">
+        <div className="mx-auto max-w-7xl rounded-[2rem] border border-border/70 bg-surface/55 p-7 shadow-2xl shadow-black/15 md:p-10">
+          <ScrollReveal>
+            <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-accent">
+                  Wilayah
+                </p>
+                <h2 className="mt-3 text-3xl font-bold text-white"
+                  style={{ fontFamily: "'Playfair Display', serif" }}
+                >
+                  Judul
+                </h2>
+              </div>
+              <p className="max-w-xl text-sm leading-relaxed text-text-secondary">
+                Deskripsi
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {regions.map((region, index) => (
+                <div
+                  key={region}
+                  className="flex items-center gap-3 rounded-xl border border-border/50 bg-background/45 px-4 py-3"
+                >
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-xs font-bold text-accent">
+                    {index + 1}
+                  </div>
+                  <span className="text-sm text-text-secondary">{region}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-2xl border border-border/60 bg-background/55 p-6 md:flex-row md:items-center">
+              <div className="flex items-start gap-4">
+                <Users size={24} className="mt-1 shrink-0 text-accent" />
+                <div>
+                  <h3 className="text-xl font-bold text-white">
+                    Ingin mengenal pelayanan lebih lanjut?
+                  </h3>
+                  <p className="mt-1 text-sm text-text-secondary">
+                    Hubungi kami atau lihat informasi pelayanan terbaru.
+                  </p>
+                </div>
+              </div>
+              <Link
+                href="/#kontak"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-primary-dark"
+              >
+                Hubungi Kami
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
 
       {/* ── CTA Banner ───────────────────────────────────────────────────── */}
       <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto mb-16">
